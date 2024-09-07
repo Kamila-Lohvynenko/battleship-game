@@ -1,0 +1,34 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 80px;
+}
+.title {
+  box-sizing: border-box;
+  width: 470px;
+  height: 100px;
+
+  /* margin: 10px auto 30px; */
+  padding: 5px;
+
+  text-align: center;
+
+  font-size: 70px;
+  border-radius: 6px;
+
+  background-color: rgb(148, 198, 243);
+}
+
+.ship {
+  width: 160px;
+  height: auto;
+}
+.fire {
+  width: 80px;
+  height: auto;
+  margin-left: 80px;
+
+  fill: orange;
+}

@@ -1,0 +1,12 @@
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4em;
+  width: 4em;
+
+  padding: 0;
+
+  background-color: rgb(217, 233, 250);
+  border: solid 0.5px rgb(1, 1, 1);
+}

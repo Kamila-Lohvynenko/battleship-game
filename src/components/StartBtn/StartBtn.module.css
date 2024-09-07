@@ -1,0 +1,9 @@
+.start {
+  display: block;
+  padding: 20px;
+  margin: 40px auto;
+
+  border-radius: 6px;
+
+  background-color: rgb(148, 198, 243);
+}

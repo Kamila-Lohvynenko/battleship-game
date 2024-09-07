@@ -1,0 +1,13 @@
+.line {
+  display: flex;
+}
+
+.waves {
+  width: 40px;
+  /* fill: rgb(107, 107, 202); */
+  fill: rgb(66, 152, 228);
+}
+.fire {
+  fill: orange;
+  width: 60px;
+}

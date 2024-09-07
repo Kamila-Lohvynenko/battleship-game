@@ -6,6 +6,7 @@ import { CHECKED_SHIP, CHECKED_WATER, SHIP, WATER } from "./cellState";
 type StateType = {
   turn: number;
   matrix: number[][];
+  won: boolean;
 };
 
 const MAX_MATRIX_LENGTH = 10;
@@ -28,13 +29,14 @@ export const useGameState = () => {
   const [state, setState] = useState<StateType>({
     turn: 0,
     matrix: createBattlefield(),
+    won: false,
   });
 
-  const { turn, matrix } = state;
   const start = () => {
     setState({
       turn: 0,
       matrix: createBattlefield(),
+      won: false,
     });
   };
   const fire = (x: number, y: number) => {
@@ -44,8 +46,12 @@ export const useGameState = () => {
     }
     const newState = cell === WATER ? CHECKED_WATER : CHECKED_SHIP;
     state.matrix[y][x] = newState;
-    setState({ ...state, turn: state.turn + 1 });
+    const won = state.matrix.every((line) =>
+      line.every((value) => value !== SHIP)
+    );
+    setState({ ...state, turn: state.turn + 1, won });
   };
+  const { turn, matrix, won } = state;
 
-  return { turn, start, matrix, fire };
+  return { turn, start, matrix, fire, won };
 };
