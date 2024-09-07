@@ -9,4 +9,12 @@
 
   background-color: rgb(217, 233, 250);
   border: solid 0.5px rgb(1, 1, 1);
+
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.cell:hover {
+  background-color: rgb(164, 208, 246);
 }

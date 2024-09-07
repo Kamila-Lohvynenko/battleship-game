@@ -8,4 +8,12 @@
   font-size: 22px;
 
   background-color: rgb(148, 198, 243);
+
+  transition-duration: 250ms;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.start:hover {
+  background-color: rgb(115, 182, 241);
 }

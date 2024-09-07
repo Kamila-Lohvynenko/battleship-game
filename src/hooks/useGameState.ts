@@ -9,7 +9,7 @@ type StateType = {
   won: boolean;
 };
 
-const MAX_MATRIX_LENGTH = 10;
+const MAX_MATRIX_LENGTH = 8;
 
 const createEmptyBattlefield = () =>
   createArray(MAX_MATRIX_LENGTH, () => createArray(MAX_MATRIX_LENGTH, () => 0));
