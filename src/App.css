@@ -3,8 +3,8 @@
   justify-content: space-between;
   align-items: center;
 
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 250px;
+  padding-right: 250px;
 }
 
 .lightning {
@@ -12,4 +12,16 @@
   width: 100px;
   height: auto;
   fill: orange;
+}
+.user {
+  width: 150px;
+  height: 48px;
+  margin-bottom: 0;
+
+  font-size: 28px;
+  font-weight: 500;
+  border-radius: 6px;
+
+  text-align: center;
+  background-color: orange;
 }

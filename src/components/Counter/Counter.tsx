@@ -6,7 +6,7 @@ type CounterProps = {
 };
 
 const Counter: FC<CounterProps> = ({ turn }) => {
-  return <div className={css.counter}>Counter {turn}</div>;
+  return <div className={css.counter}>{turn}</div>;
 };
 
 export default Counter;
